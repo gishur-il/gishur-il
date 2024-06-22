@@ -27,16 +27,30 @@ button {
   cursor: pointer;
 }
 
+h2 {
+  font-family: "Heebo Variable", sans-serif;
+}
+
+.frame {
+  width: 980px;
+  margin: 0 auto;
+}
+
 header {
   background: linear-gradient(to bottom, #4a7999, #82aac5);
   color: white;
-  padding: 20px 80px;
+  padding-top: 20px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
 
   img {
     width: 99px;
     height: 94px;
+  }
+
+  .content {
+    margin-right: 40px;
   }
 
   h1 {
@@ -48,13 +62,38 @@ header {
 
   h2 {
     font-size: 68px;
-    font-family: "Heebo Variable", sans-serif;
     margin: 50px 0 0;
     max-width: 500px;
     line-height: 72px;
     font-weight: 300;
   }
+
   button {
-    margin-top: 80px;
+    margin-top: 60px;
+  }
+}
+
+section.bini {
+  background-color: rgb(213, 227, 228);
+
+  .horizontal {
+    align-items: flex-end;
+  }
+
+  h2 {
+    font-weight: 300;
+    color: rgb(238, 141, 47);
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    width: 316px;
+    height: 322px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 100;
   }
 }
