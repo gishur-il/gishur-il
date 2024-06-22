@@ -8,6 +8,7 @@ import RealEstate from "./RealEstate";
 import Employment from "./Labor";
 import State from "./State";
 import Arbitration from "./Arbitration";
+import Orly from "./Orly";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Employment />
       <State />
       <Arbitration />
+      <Orly />
     </div>
   );
 };
