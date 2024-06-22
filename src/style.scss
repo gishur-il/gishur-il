@@ -27,8 +27,16 @@ button {
   cursor: pointer;
 }
 
-h2 {
+h2,
+h3 {
   font-family: "Heebo Variable", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .frame {
@@ -65,7 +73,6 @@ header {
     margin: 50px 0 0;
     max-width: 500px;
     line-height: 72px;
-    font-weight: 300;
   }
 
   button {
@@ -83,7 +90,6 @@ section.bini {
   h2 {
     font-weight: 300;
     color: rgb(238, 141, 47);
-    font-size: 30px;
     letter-spacing: 1px;
   }
 
@@ -91,9 +97,34 @@ section.bini {
     width: 316px;
     height: 322px;
   }
+}
 
-  p {
-    font-size: 18px;
-    font-weight: 100;
+section.family {
+  background-color: rgb(127, 171, 196);
+  color: white;
+
+  h3 {
+    margin: 0;
+  }
+
+  .frame {
+    position: relative;
+  }
+
+  .content {
+    width: 590px;
+    padding-top: 20px;
+    padding-right: 90px;
+    padding-bottom: 50px;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 372px;
+    height: 376px;
+    opacity: 0.08;
+    filter: brightness(0.3);
   }
 }
