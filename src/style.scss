@@ -1,0 +1,60 @@
+/* heebo-hebrew-wght-normal */
+@font-face {
+  font-family: "Heebo Variable";
+  font-style: normal;
+  font-display: block;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/heebo/files/heebo-hebrew-wght-normal.woff2)
+    format("woff2-variations");
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+}
+
+.horizontal {
+  display: flex;
+}
+
+button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(to bottom, #4a7999, #82aac5);
+  color: white;
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 99px;
+    height: 94px;
+  }
+
+  h1 {
+    font-size: 45px;
+    font-family: "Heebo Variable", sans-serif;
+    font-weight: normal;
+    margin: 30px 21px 0 0;
+  }
+
+  h2 {
+    font-size: 68px;
+    font-family: "Heebo Variable", sans-serif;
+    margin: 50px 0 0;
+    max-width: 500px;
+    line-height: 72px;
+    font-weight: 300;
+  }
+  button {
+    margin-top: 80px;
+  }
+}
