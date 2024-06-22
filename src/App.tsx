@@ -3,6 +3,11 @@ import { createRoot } from "react-dom/client";
 import Header from "./Header";
 import Bini from "./Bini";
 import Family from "./Family";
+import Commercial from "./Commercial";
+import RealEstate from "./RealEstate";
+import Employment from "./Labor";
+import State from "./State";
+import Arbitration from "./Arbitration";
 
 const App = () => {
   return (
@@ -10,6 +15,11 @@ const App = () => {
       <Header />
       <Bini />
       <Family />
+      <Commercial />
+      <RealEstate />
+      <Employment />
+      <State />
+      <Arbitration />
     </div>
   );
 };

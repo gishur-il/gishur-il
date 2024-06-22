@@ -128,3 +128,56 @@ section.family {
     filter: brightness(0.3);
   }
 }
+
+section.commercial {
+  h3 {
+    margin: 0;
+  }
+
+  background-color: rgb(238, 141, 47);
+  color: white;
+
+  .content {
+    width: 620px;
+    margin-right: 320px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+section.real-estate,
+section.state {
+  background-color: rgb(213, 227, 228);
+  h3 {
+    margin: 0;
+    color: #ee8d2f;
+    max-width: 400px;
+  }
+
+  .content {
+    width: 640px;
+    padding-top: 30px;
+    margin-right: 95px;
+    padding-bottom: 20px;
+  }
+}
+
+section.labor,
+section.arbitration {
+  background-color: rgb(127, 171, 196);
+
+  h3 {
+    margin: 0;
+  }
+
+  .content {
+    width: 640px;
+    padding-top: 30px;
+    margin-right: 320px;
+    padding-bottom: 20px;
+  }
+}
+
+section.arbitration {
+  color: white;
+}
