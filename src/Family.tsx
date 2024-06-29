@@ -1,6 +1,6 @@
 import * as React from "react";
 // @ts-ignore
-import leaf from "./leaf.svg";
+import leaf from "./images/leaf.svg";
 
 export default function () {
   return (

@@ -1,6 +1,5 @@
-import * as React from "react";
 // @ts-ignore
-import bini from "./bini.jpg";
+import bini from "./images/bini.jpg";
 
 export default function () {
   return (

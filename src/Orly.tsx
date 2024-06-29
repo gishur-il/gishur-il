@@ -1,6 +1,6 @@
 import * as React from "react";
 // @ts-ignore
-import orly from "./orly.jpg";
+import orly from "./images/orly.jpg";
 
 export default function () {
   return (

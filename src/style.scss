@@ -18,6 +18,14 @@ body {
   display: flex;
 }
 
+a {
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+}
+
 button {
   background: transparent;
   color: white;
@@ -28,7 +36,8 @@ button {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   font-family: "Heebo Variable", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -188,7 +197,6 @@ section.orly {
 
   .content {
     width: 540px;
-    //margin-top: 60px;
 
     p {
       margin-top: 40px;
@@ -198,5 +206,60 @@ section.orly {
   img {
     width: 273px;
     height: 364px;
+  }
+}
+
+section.contact {
+  background-color: rgb(254, 254, 246);
+
+  h3,
+  h4 {
+    margin: 0;
+    color: #ee8d2f;
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  .content {
+    margin-right: 95px;
+    padding-top: 60px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .phone {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .phone a {
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  img {
+    margin-top: 20px;
+    margin-bottom: 14px;
+    width: 322px;
+    height: 206px;
+  }
+
+  .branches {
+    margin-top: 80px;
+    display: flex;
+    gap: 80px;
+    padding-bottom: 20px;
+  }
+
+  .branch {
+    padding-bottom: 40px;
+    p {
+      margin: 3px;
+    }
   }
 }

@@ -1,8 +1,8 @@
 import * as React from "react";
 // @ts-ignore
-import logo from "./gishur-logo-brighter.png";
+import logo from "./images/gishur-logo-brighter.png";
 
-export default function () {
+export default function ({ scroll }) {
   return (
     <header>
       <div className="frame">
@@ -13,7 +13,7 @@ export default function () {
 
         <div className="content">
           <h2>נכנסים במחלוקות מסיימים בהבנות</h2>
-          <button>צרו קשר</button>
+          <button onClick={() => scroll()}>צרו קשר</button>
         </div>
       </div>
     </header>

@@ -1,4 +1,3 @@
-import * as React from "react";
 import { createRoot } from "react-dom/client";
 import Header from "./Header";
 import Bini from "./Bini";
@@ -9,11 +8,17 @@ import Employment from "./Labor";
 import State from "./State";
 import Arbitration from "./Arbitration";
 import Orly from "./Orly";
+import Contact from "./Contact";
+import { useRef, createElement } from "react";
 
 const App = () => {
+  const contactRef = useRef(null);
+  const scroll = () =>
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+
   return (
     <div>
-      <Header />
+      <Header scroll={scroll} />
       <Bini />
       <Family />
       <Commercial />
@@ -22,9 +27,12 @@ const App = () => {
       <State />
       <Arbitration />
       <Orly />
+      <div ref={contactRef}>
+        <Contact />
+      </div>
     </div>
   );
 };
 
 const root = createRoot(document.getElementById("app"));
-root.render(React.createElement(App));
+root.render(createElement(App));
