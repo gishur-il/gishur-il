@@ -263,3 +263,19 @@ section.contact {
     }
   }
 }
+
+section.footer {
+  background-color: rgb(110, 176, 204);
+  color: white;
+  a {
+    color: white;
+  }
+  .content {
+    margin-right: 95px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  p {
+    margin: 0;
+  }
+}

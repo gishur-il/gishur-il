@@ -10,6 +10,7 @@ import Arbitration from "./Arbitration";
 import Orly from "./Orly";
 import Contact from "./Contact";
 import { useRef, createElement } from "react";
+import Footer from "./Footer";
 
 const App = () => {
   const contactRef = useRef(null);
@@ -30,6 +31,7 @@ const App = () => {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 };
