@@ -38,6 +38,11 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: npm run build
+      - name: List output files
+        run: |
+          pwd
+          ls -alh
+          ls -alh ./dist
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
