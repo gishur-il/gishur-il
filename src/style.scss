@@ -218,7 +218,8 @@ section.contact {
 
   h3,
   h4 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     color: #ee8d2f;
     font-size: 40px;
   }
@@ -328,6 +329,7 @@ section.footer {
   header {
     position: relative;
     padding-top: 0;
+    padding-bottom: 30px;
 
     &.menu-open {
       width: 100%;
@@ -382,11 +384,11 @@ section.footer {
         }
       }
       span:first-child {
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
       }
 
       span:nth-last-child(2) {
-        transform-origin: 0% 100%;
+        transform-origin: 0 100%;
       }
 
       &.open span {
@@ -414,13 +416,17 @@ section.footer {
     }
 
     h2 {
-      font-size: 45px;
+      font-size: 36px;
       margin: 30px 0 0;
       line-height: 50px;
     }
 
-    button {
-      margin-top: 30px;
+    .content > button {
+      margin: 50px auto 0;
+      width: 120px;
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
     }
   }
 
@@ -429,29 +435,30 @@ section.footer {
 
     & > * {
       margin-right: 8px;
+      max-width: 90%;
     }
   }
 
   section.bini {
     h2 {
-      font-size: 40px;
+      font-size: 22px;
       line-height: 45px;
     }
 
     img {
-      width: 100%;
+      width: 60%;
       height: auto;
     }
 
     .horizontal {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column-reverse;
+      align-items: flex-start;
     }
   }
 
   section.family {
     h3 {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .content {
@@ -467,7 +474,7 @@ section.footer {
 
   section.commercial {
     h3 {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .content {
@@ -481,7 +488,7 @@ section.footer {
   section.state,
   section.orly {
     h3 {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .content {
@@ -493,7 +500,7 @@ section.footer {
   section.labor,
   section.arbitration {
     h3 {
-      font-size: 30px;
+      font-size: 22px;
     }
 
     .content {
@@ -504,8 +511,11 @@ section.footer {
   }
 
   section.orly {
+    .horizontal {
+      align-items: center;
+    }
     img {
-      width: 100%;
+      width: 65%;
       height: auto;
     }
   }
@@ -530,6 +540,11 @@ section.footer {
     img {
       width: 100%;
       height: auto;
+    }
+
+    .branches {
+      flex-direction: column;
+      gap: 20px;
     }
   }
 }
