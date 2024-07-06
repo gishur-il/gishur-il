@@ -4,7 +4,7 @@ import leaf from "./images/leaf.svg";
 
 export default function () {
   return (
-    <section className="family">
+    <section className="family" id="family">
       <div className="frame">
         <div className="content">
           <h3>גישור בענייני משפחה</h3>

@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <section className="commercial">
+    <section className="commercial" id="commercial">
       <div className="frame">
         <div className="content">
           <h3>גישור מסחרי</h3>

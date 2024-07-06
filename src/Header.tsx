@@ -6,6 +6,11 @@ import Menu from "./Menu";
 export default function ({ scroll }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  function menuClick(id) {
+    setMenuOpen(false);
+    scroll(id);
+  }
+
   return (
     <header className={menuOpen ? "menu-open" : ""}>
       <div className="frame">
@@ -23,11 +28,11 @@ export default function ({ scroll }) {
           </div>
         </div>
 
-        <Menu menuOpen={menuOpen} />
+        <Menu menuOpen={menuOpen} menuClick={menuClick} />
 
         <div className="content">
           <h2>נכנסים במחלוקות מסיימים בהבנות</h2>
-          <button onClick={() => scroll()}>צרו קשר</button>
+          <button onClick={() => scroll("contact")}>צרו קשר</button>
         </div>
       </div>
     </header>

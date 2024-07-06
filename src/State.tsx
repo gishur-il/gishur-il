@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <section className="state">
+    <section className="state" id="state">
       <div className="frame">
         <div className="content">
           <h3>גישור בין המדינה והגופים הציבוריים לבין חברות ופרטים</h3>

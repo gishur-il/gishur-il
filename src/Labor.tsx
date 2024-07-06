@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <section className="labor">
+    <section className="labor" id="labor">
       <div className="frame">
         <div className="content">
           <h3>גישור בענייני עבודה</h3>

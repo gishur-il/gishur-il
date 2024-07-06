@@ -3,7 +3,7 @@ import bini from "./images/bini.jpg";
 
 export default function () {
   return (
-    <section className="bini">
+    <section className="bini" id="bini">
       <div className="frame">
         <div className="horizontal">
           <img src={bini} alt={"ביני בר לב"} />

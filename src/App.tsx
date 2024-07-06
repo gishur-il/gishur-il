@@ -13,9 +13,11 @@ import { useRef, createElement } from "react";
 import Footer from "./Footer";
 
 const App = () => {
-  const contactRef = useRef(null);
-  const scroll = () =>
-    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  const scroll = (id) => {
+    setTimeout(() => {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }, 0);
+  };
 
   return (
     <div>
@@ -28,9 +30,7 @@ const App = () => {
       <State />
       <Arbitration />
       <Orly />
-      <div ref={contactRef}>
-        <Contact />
-      </div>
+      <Contact />
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ import jerusalem from "./images/jerusalem.jpg";
 
 export default function () {
   return (
-    <section className="contact" id="contact-us">
+    <section className="contact" id="contact">
       <div className="frame">
         <div className="content">
           <h3>צרו קשר</h3>

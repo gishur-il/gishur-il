@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <section className="arbitration">
+    <section className="arbitration" id="arbitration">
       <div className="frame">
         <div className="content">
           <h3>בוררות</h3>

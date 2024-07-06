@@ -1,10 +1,9 @@
-import * as React from "react";
 // @ts-ignore
 import orly from "./images/orly.jpg";
 
 export default function () {
   return (
-    <section className="orly">
+    <section className="orly" id="orly">
       <div className="frame">
         <div className="horizontal">
           <div className="content">
