@@ -8,7 +8,7 @@ export default function () {
         <div className="horizontal">
           <img src={bini} alt={"ביני בר לב"} />
 
-          <div>
+          <div className="content">
             <h2>ביני בר לב, עו״ד - מגשר</h2>
             <p>ממייסדיי תחום הגישור בארץ, מייסד ועומד בראש גישור ישראל.</p>
             <p>
