@@ -6,7 +6,8 @@ import Menu from "./Menu";
 export default function ({ scroll }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function menuClick(id) {
+  function menuClick(event, id) {
+    event.preventDefault();
     setMenuOpen(false);
     scroll(id);
   }
