@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   root: "src",
-  base: "/gi2/",
+  base: "/gishur-il/",
   // build to /dist
   build: {
     outDir: "../dist",
