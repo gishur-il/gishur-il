@@ -1,4 +1,3 @@
-import * as React from "react";
 // @ts-ignore
 import leaf from "./images/leaf.svg";
 

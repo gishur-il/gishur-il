@@ -1,4 +1,10 @@
-export default function ({ menuOpen, menuClick }) {
+export default function ({
+  menuOpen,
+  menuClick,
+}: {
+  menuOpen: boolean;
+  menuClick: Function;
+}) {
   return (
     <div id="menu" className={menuOpen ? "open" : "hidden"}>
       <a onClick={(e) => menuClick(e, "bini")} href="#bini">

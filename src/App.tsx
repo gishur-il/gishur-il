@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+import { render } from "preact";
 import Header from "./Header";
 import Bini from "./Bini";
 import Family from "./Family";
@@ -9,13 +9,12 @@ import State from "./State";
 import Arbitration from "./Arbitration";
 import Orly from "./Orly";
 import Contact from "./Contact";
-import { useRef, createElement } from "react";
 import Footer from "./Footer";
 
-const App = () => {
-  const scroll = (id) => {
+export default function () {
+  const scroll = (id: string) => {
     setTimeout(() => {
-      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     }, 0);
   };
 
@@ -34,7 +33,4 @@ const App = () => {
       <Footer />
     </div>
   );
-};
-
-const root = createRoot(document.getElementById("app"));
-root.render(createElement(App));
+}

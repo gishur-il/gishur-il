@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from "preact/hooks";
 // @ts-ignore
 import logo from "./images/gishur-logo-brighter.png";
 import Menu from "./Menu";
 
-export default function ({ scroll }) {
+export default function ({ scroll }: { scroll: Function }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function menuClick(event, id) {
+  function menuClick(event: Event, id: string) {
     event.preventDefault();
     setMenuOpen(false);
     scroll(id);
