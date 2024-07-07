@@ -1,4 +1,3 @@
-import { render } from "preact";
 import Header from "./Header";
 import Bini from "./Bini";
 import Family from "./Family";

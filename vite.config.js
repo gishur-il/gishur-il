@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import prefresh from "@prefresh/vite";
 
 export default defineConfig({
   esbuild: {
@@ -7,16 +6,7 @@ export default defineConfig({
     jsxFragment: "Fragment",
     jsxInject: `import { h, Fragment } from 'preact'`,
   },
-  plugins: [
-    prefresh(),
-    [
-      "@babel/plugin-transform-react-jsx",
-      {
-        pragma: "h",
-        pragmaFrag: "Fragment",
-      },
-    ],
-  ],
+  plugins: [],
   alias: {
     react: "preact/compat",
   },

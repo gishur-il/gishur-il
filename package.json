@@ -9,7 +9,6 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.24.7",
     "@eslint/js": "^9.4.0",
     "@prefresh/vite": "^2.4.6",
     "@vitejs/plugin-react": "^4.3.0",
