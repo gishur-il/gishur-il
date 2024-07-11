@@ -11,7 +11,7 @@ export default defineConfig({
     react: "preact/compat",
   },
   root: "src",
-  base: "/gishur-il/",
+  base: "",
   build: {
     outDir: "../dist",
   },
