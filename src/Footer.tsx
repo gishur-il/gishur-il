@@ -4,9 +4,8 @@ export default function () {
       <div className="frame">
         <div className="content">
           <p>
-            לפרטים נוספים הכנסו ל-
-            <a href="https://gishur-israel.co.il/?noMobileRedirect=true">
-              gishur-israel.co.il
+            <a href="https://kishka.gishur-israel.com/?noMobileRedirect=true">
+              לפרטים נוספים
             </a>
           </p>
         </div>
